@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <title>Отдел кадров</title>
+    <link rel="stylesheet" href="style/sryle.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+ <div class="container">
+     <div class="row">
+         <div class="col-lg-4 text-center col-lg-offset-4">
+    <h1>Отдел кадров</h1>
+</div> 
+    </div>
+    <form action="form.php" method="POST" name="forma">
+            <input type="text" id="name" name="classics_name" required placeholder="Имя" data-rule="string">
+            <input type="text" id="familya" name="classics_familya" required placeholder="Фамилия" data-rule="string">
+            <label for="classics_birthday">Дата рождения</label>
+            <input class="birthdaye" type="date" id="birthday" name="classics_birthday" placeholder="Дата рождения">
+            <input type="number" id="age" name="classics_age" placeholder="Возраст">
+            <input type="text" id="placeofbirtch" name="classics_placeofbirtch" required placeholder="Место рождения">
+            <input type="text" id="grazjdanstvo" name="classics_grazjdanstvo" placeholder="Гражданство">
+            <label for="classics_english">Знание Английского</label>
+            <select name="classics_english" id="english">
+                <option value="Не знает">Нет)</option>
+                <option value="Низкий уровень">Низкий уровень</option>
+                <option value="Средний уровень">Средний уровень</option>
+                <option value="Высокий уровень">Высокий уровень</option>
+            </select>
+            <select id="obrazovanie" name="classics_obrazovanie" placeholder="Образование">
+                <option value="Пни долбоеба он нажал не туда">Образование</option>
+                <option value="Начальное">Начальное</option>
+                <option value="Среднее общее">Среднее общее</option>
+                <option value="Среднее полное">Среднее полное</option>
+                <option value="Среднее профессиональное">Среднее профессиональное</option>
+                <option value="Бакалавриат высшего образования">Бакалавриат высшего образования</option>
+                <option value="Специалитет высшего образования">Специалитет высшего образования</option>
+                <option value="Магистратура">Магистратура</option>
+            </select>
+
+            <input class="endbutton" type="submit" value="Отправить в БД">
+    </form>
+</div>
+</body>
+</html>
